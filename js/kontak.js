@@ -35,7 +35,7 @@ $('#putri_form').addEventListener('submit',e=>{
   msg.className='putri_msg '+(ok?'putri_ok':'putri_bad');
   if(ok){
     const teks='Halo Putri Ayu Salon,\n\nNama: '+nama.value.trim()+'\nEmail: '+em.value.trim()+'\nLayanan/Paket: '+val.value+'\n\nPesan:\n'+ps.value.trim();
-    location.href='mailto:putriayusalon@gmail.com?subject='+encodeURIComponent('Pesan dari '+nama.value.trim())+'&body='+encodeURIComponent(teks);
+    location.href='mailto:putriayusalonn@gmail.com?subject='+encodeURIComponent('Pesan dari '+nama.value.trim())+'&body='+encodeURIComponent(teks);
     msg.textContent='Terima kasih, '+nama.value.trim()+'! Aplikasi email kamu akan terbuka, tinggal tekan kirim.';e.target.reset();setVal('');} 
   else msg.textContent='Mohon lengkapi semua kolom dengan benar ya.';
 });
